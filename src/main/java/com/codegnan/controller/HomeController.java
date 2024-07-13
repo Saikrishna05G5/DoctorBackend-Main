@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
 @CrossOrigin(origins = "*")
-public class HomeController {
+public class HomeController{
+
 	@GetMapping
 	public String home() {
 		return "Welcome To Hospital Management Application";
 	}
+	
 }
